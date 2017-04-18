@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80bebebe"
+    android:padding="5dp"
+    tools:context="in.nrg.sampleapps.firebase.home.fragment.HomePageFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80bebebe">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="oil_less">3</integer>
+    <integer name="oil_medium">5</integer>
+    <integer name="oil_high">7</integer>
+
+    <integer name="spice_less">3</integer>
+    <integer name="spice_medium">5</integer>
+    <integer name="spice_high">7</integer>
+
+    <integer name="fluid_less">3</integer>
+    <integer name="fluid_medium">5</integer>
+    <integer name="fluid_high">7</integer>
+
+</resources>
