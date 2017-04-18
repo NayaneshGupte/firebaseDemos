@@ -10,4 +10,4 @@ Android Firebase Demo covers :
 
 4. Fetching data from Firebase along with images. 
 
-5. Firebase-UI: FirbaseRecyclerADapter
+5. Firebase-UI: FirebaseRecyclerAdapter
