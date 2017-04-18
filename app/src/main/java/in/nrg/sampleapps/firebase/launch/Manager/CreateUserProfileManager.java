@@ -1,7 +1,6 @@
 package in.nrg.sampleapps.firebase.launch.Manager;
 
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -9,7 +8,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 
 /**
- * Created by nayaneshg on 04/02/17.
+ * Create User profile on Firebase
+ *
+ * @author Nayanesh Gupte
  */
 
 public class CreateUserProfileManager implements OnCompleteListener<Void> {
@@ -22,7 +23,7 @@ public class CreateUserProfileManager implements OnCompleteListener<Void> {
 
         void onUserProfileChanged(String username);
 
-        void onUserProfileChangeFialed();
+        void onUserProfileChangeFailed();
     }
 
     public CreateUserProfileManager(OnUserProfileChangedListener onUserProfileChangedListener) {
@@ -41,10 +42,8 @@ public class CreateUserProfileManager implements OnCompleteListener<Void> {
     public void onComplete(@NonNull Task<Void> task) {
         if (task.isSuccessful()) {
             onUserProfileChangedListener.onUserProfileChanged(user.getDisplayName());
-            Log.d("CreateUserProfile", "user.getDisplayName(): " + user.getDisplayName());
-
         } else {
-            onUserProfileChangedListener.onUserProfileChangeFialed();
+            onUserProfileChangedListener.onUserProfileChangeFailed();
         }
     }
 }

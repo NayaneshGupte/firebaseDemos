@@ -10,7 +10,13 @@ import com.squareup.picasso.Picasso;
 import de.hdodenhof.circleimageview.CircleImageView;
 import in.nrg.sampleapps.firebase.R;
 import in.nrg.sampleapps.firebase.dishdetails.model.DishDetails;
+import in.nrg.sampleapps.firebase.home.fragment.HomePageFragment;
 
+/**
+ * ViewHolder class representing data in single row on {@link HomePageFragment}
+ *
+ * @author Nayanesh Gupte
+ */
 public class DishListViewHolder extends RecyclerView.ViewHolder {
 
     private Context mContext;

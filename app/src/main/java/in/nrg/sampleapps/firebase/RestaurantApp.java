@@ -7,6 +7,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Application class
+ *
+ * @author Nayanesh Gupte
  */
 public class RestaurantApp extends Application {
 

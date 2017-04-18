@@ -8,6 +8,8 @@ import in.nrg.sampleapps.firebase.launch.activity.SignInActivity;
 import in.nrg.sampleapps.firebase.launch.activity.SignUpActivity;
 
 /**
+ * Handle launching different activities in launch scenario
+ *
  * @author Nayanesh Gupte
  */
 
@@ -27,6 +29,7 @@ public class LaunchManager {
 
     public static void showSignInScreen(Activity activity) {
         Intent intent = new Intent(activity, SignInActivity.class);
+        //clear activity stack while launching signin screen
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         activity.startActivity(intent);
         activity.finish();

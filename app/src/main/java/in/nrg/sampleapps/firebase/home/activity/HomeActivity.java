@@ -21,7 +21,8 @@ import in.nrg.sampleapps.firebase.home.presenter.HeaderViewPresenter;
 import in.nrg.sampleapps.firebase.launch.utils.LaunchManager;
 
 /**
- * HomeActivity to display list of all dishes
+ * HomeActivity is NavigationDrawer Activity. This takes care of only different fragments attached
+ * to options in navigation screen.
  *
  * @author Nayanesh Gupte
  */

@@ -10,6 +10,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 /**
  * Perform Sign up using Firebase
+ *
+ * @author Nayanesh Gupte
  */
 public class SignUpManager implements OnCompleteListener<AuthResult>,
         CreateUserProfileManager.OnUserProfileChangedListener {
@@ -51,7 +53,7 @@ public class SignUpManager implements OnCompleteListener<AuthResult>,
     }
 
     @Override
-    public void onUserProfileChangeFialed() {
+    public void onUserProfileChangeFailed() {
         signUpCompleteListener.onSignUpFailure();
     }
 

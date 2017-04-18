@@ -7,6 +7,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 /**
  * Auth manager to check if user is still valid user
+ *
+ * @author Nayanesh Gupte
  */
 public class FirebaseAuthManager implements FirebaseAuth.AuthStateListener {
 

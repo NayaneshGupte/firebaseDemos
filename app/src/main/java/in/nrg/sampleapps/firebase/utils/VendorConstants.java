@@ -2,6 +2,8 @@ package in.nrg.sampleapps.firebase.utils;
 
 /**
  * Constants used across the app
+ *
+ * @author Nayanesh Gupte
  */
 public class VendorConstants {
 
@@ -12,7 +14,6 @@ public class VendorConstants {
      * https://console.firebase.google.com/project/fir-sampleapps/storage/files
      */
     public static final String APP_URL = "gs://fir-sampleapps.appspot.com";
-    public static final String KEY_DISH_DETAILS = "dish_details";
     public static final String KEY_SINGLE_DISH_DETAILS = "single_dish_details";
 
     public static final String POSITION = "position";

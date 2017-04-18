@@ -17,6 +17,11 @@ import in.nrg.sampleapps.firebase.home.utils.ValidationUtils;
 import in.nrg.sampleapps.firebase.launch.Manager.SignUpManager;
 import in.nrg.sampleapps.firebase.launch.utils.LaunchManager;
 
+/**
+ * Sign up process for app
+ *
+ * @author Nayanesh Gupte
+ */
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener,
         SignUpManager.FirebaseSignUpCompleteListener {
 

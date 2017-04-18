@@ -7,11 +7,14 @@ import android.os.Bundle;
 import in.nrg.sampleapps.firebase.R;
 import in.nrg.sampleapps.firebase.dishdetails.activities.DishDetailsActivity;
 import in.nrg.sampleapps.firebase.dishdetails.fragments.DishUploadFragment;
+import in.nrg.sampleapps.firebase.home.activity.HomeActivity;
 import in.nrg.sampleapps.firebase.home.fragment.HomePageFragment;
 
 
 /**
- * Manager to handle home page related operations
+ * Manager to handle navigation operations associated with {@link HomeActivity}
+ *
+ * @author Nayanesh Gupte
  */
 public class HomeFragmentManager {
 

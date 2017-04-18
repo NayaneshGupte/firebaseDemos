@@ -10,6 +10,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 /**
  * Perform Sign In using Firebase
+ *
+ * @author Nayanesh Gupte
  */
 public class SignInManager implements OnCompleteListener<AuthResult> {
 

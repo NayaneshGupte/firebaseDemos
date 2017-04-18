@@ -23,6 +23,8 @@ import in.nrg.sampleapps.firebase.utils.OnRecycleViewItemClickListener;
 
 /**
  * Home page fragment showing list of dishes with basic information
+ *
+ * @author Nayanesh Gupte
  */
 public class HomePageFragment extends Fragment implements OnRecycleViewItemClickListener,
         ListDataProgressListener {
@@ -41,7 +43,6 @@ public class HomePageFragment extends Fragment implements OnRecycleViewItemClick
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_home_page, container, false);
-
     }
 
     @Override

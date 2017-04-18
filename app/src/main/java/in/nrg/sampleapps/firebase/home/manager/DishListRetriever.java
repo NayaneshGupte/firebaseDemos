@@ -30,6 +30,7 @@ public class DishListRetriever implements ChildEventListener, ValueEventListener
     }
 
     public Query fetchAllDishes() {
+        listDataProgressListener.onListDataFetchStarted();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String uid = user.getUid();
 
@@ -47,6 +48,7 @@ public class DishListRetriever implements ChildEventListener, ValueEventListener
 
     @Override
     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+        //convert dataSnapshot into POJO
         DishDetails dishDetails = dataSnapshot.getValue(DishDetails.class);
     }
 
